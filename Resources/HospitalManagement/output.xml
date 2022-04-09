@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.2 on win32)" generated="20220409 23:10:35.787" rpa="false" schemaversion="3">
+<suite id="s1" name="Hospital" source="C:\Users\rohit's pc\PycharmProjects\RobotFrameworkHosp\Tests\HospitalManagement\FunctionalTestSuite\hospital.robot">
+<test id="s1-t1" name="Link opening test case" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220409 23:10:36.441" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000/'.</msg>
+<msg timestamp="20220409 23:10:36.454" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220409 23:10:36.456" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20220409 23:10:36.440" endtime="20220409 23:10:36.465"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:36.466" endtime="20220409 23:10:36.467"/>
+</kw>
+<doc>Link opening</doc>
+<tag>patient</tag>
+<status status="FAIL" starttime="20220409 23:10:36.438" endtime="20220409 23:10:36.469">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<test id="s1-t2" name="login test case" line="11">
+<kw name="user login" library="hoskeywords">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220409 23:10:38.480" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220409 23:10:36.478" endtime="20220409 23:10:38.480"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:logusername</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:10:38.481" level="INFO">Typing text 'admin' into text field 'name:logusername'.</msg>
+<msg timestamp="20220409 23:10:38.482" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220409 23:10:38.483" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220409 23:10:38.480" endtime="20220409 23:10:38.486"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.487" endtime="20220409 23:10:38.487"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:logpassword</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.487" endtime="20220409 23:10:38.487"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.488" endtime="20220409 23:10:38.488"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div/div/dic/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.488" endtime="20220409 23:10:38.488"/>
+</kw>
+<status status="FAIL" starttime="20220409 23:10:36.476" endtime="20220409 23:10:38.489"/>
+</kw>
+<doc>Providing inputs</doc>
+<tag>Patient</tag>
+<status status="FAIL" starttime="20220409 23:10:36.474" endtime="20220409 23:10:38.492">No browser is open.</status>
+</test>
+<test id="s1-t3" name="register test case" line="16">
+<kw name="patient register" library="hoskeywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:patname</arg>
+<arg>Rohit</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220409 23:10:38.500" level="INFO">Typing text 'Rohit' into text field 'name:patname'.</msg>
+<msg timestamp="20220409 23:10:38.500" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220409 23:10:38.501" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220409 23:10:38.499" endtime="20220409 23:10:38.503"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:mobile</arg>
+<arg>1234567</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.504" endtime="20220409 23:10:38.504"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:age</arg>
+<arg>45</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.504" endtime="20220409 23:10:38.504"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:address</arg>
+<arg>Pune</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.505" endtime="20220409 23:10:38.505"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:place</arg>
+<arg>Pune</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.505" endtime="20220409 23:10:38.505"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:pincode</arg>
+<arg>60</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.505" endtime="20220409 23:10:38.506"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:dob</arg>
+<arg>8-10-2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.506" endtime="20220409 23:10:38.506"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:pwd</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.506" endtime="20220409 23:10:38.507"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:cfnpwd</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.507" endtime="20220409 23:10:38.507"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.508" endtime="20220409 23:10:38.508"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div/div/dic/form/table/tbody/tr[11]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.508" endtime="20220409 23:10:38.508"/>
+</kw>
+<status status="FAIL" starttime="20220409 23:10:38.498" endtime="20220409 23:10:38.510"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.511" endtime="20220409 23:10:38.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.512" endtime="20220409 23:10:38.512"/>
+</kw>
+<doc>Registering a patient</doc>
+<tag>patient</tag>
+<status status="FAIL" starttime="20220409 23:10:38.496" endtime="20220409 23:10:38.513">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Search patient test case" line="23">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div/div/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220409 23:10:38.517" level="INFO">Clicking element 'xpath=/html/body/nav/div/div/ul/li[3]/a'.</msg>
+<msg timestamp="20220409 23:10:38.518" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220409 23:10:38.518" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220409 23:10:38.517" endtime="20220409 23:10:38.520"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.522" endtime="20220409 23:10:38.522"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:mobile</arg>
+<arg>8596748596</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.523" endtime="20220409 23:10:38.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.524" endtime="20220409 23:10:38.524"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div/div[1]/div/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.524" endtime="20220409 23:10:38.525"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.525" endtime="20220409 23:10:38.525"/>
+</kw>
+<doc>Searching a patient</doc>
+<tag>patient</tag>
+<status status="FAIL" starttime="20220409 23:10:38.515" endtime="20220409 23:10:38.526">No browser is open.</status>
+</test>
+<test id="s1-t5" name="Update patient test case" line="33">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220409 23:10:38.531" level="INFO">Clicking element 'xpath=/html/body/nav/div/div/ul/li[4]/a'.</msg>
+<msg timestamp="20220409 23:10:38.531" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220409 23:10:38.531" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220409 23:10:38.530" endtime="20220409 23:10:38.532"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.533" endtime="20220409 23:10:38.533"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:mobile</arg>
+<arg>8722749566</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.534" endtime="20220409 23:10:38.534"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.535" endtime="20220409 23:10:38.535"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div/div/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.536" endtime="20220409 23:10:38.536"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.536" endtime="20220409 23:10:38.536"/>
+</kw>
+<kw name="patient update" library="hoskeywords">
+<status status="NOT RUN" starttime="20220409 23:10:38.537" endtime="20220409 23:10:38.537"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.539" endtime="20220409 23:10:38.539"/>
+</kw>
+<doc>Update a patient</doc>
+<tag>patient</tag>
+<status status="FAIL" starttime="20220409 23:10:38.529" endtime="20220409 23:10:38.540">No browser is open.</status>
+</test>
+<test id="s1-t6" name="Delete patient test case" line="45">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div/div/ul/li[5]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220409 23:10:38.544" level="INFO">Clicking element 'xpath=/html/body/nav/div/div/ul/li[5]/a'.</msg>
+<msg timestamp="20220409 23:10:38.544" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220409 23:10:38.545" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220409 23:10:38.544" endtime="20220409 23:10:38.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.547" endtime="20220409 23:10:38.547"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:mobile</arg>
+<arg>8722749569</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.547" endtime="20220409 23:10:38.548"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.548" endtime="20220409 23:10:38.548"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=/html/body/div/div/div/form/table/tbody/tr[3]/td[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.549" endtime="20220409 23:10:38.549"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.550" endtime="20220409 23:10:38.550"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div/div/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.551" endtime="20220409 23:10:38.551"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.552" endtime="20220409 23:10:38.552"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/nav/div/div/ul/li[6]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.552" endtime="20220409 23:10:38.553"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.554" endtime="20220409 23:10:38.554"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220409 23:10:38.555" endtime="20220409 23:10:38.555"/>
+</kw>
+<doc>delete patient</doc>
+<tag>patient</tag>
+<status status="FAIL" starttime="20220409 23:10:38.543" endtime="20220409 23:10:38.556">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20220409 23:10:35.791" endtime="20220409 23:10:38.560"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="6" skip="0">patient</stat>
+</tag>
+<suite>
+<stat pass="0" fail="6" skip="0" id="s1" name="Hospital">Hospital</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
